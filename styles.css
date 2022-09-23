@@ -1,8 +1,23 @@
+
+.nav-container a {
+    color: green;
+    font-size: xx-large;
+}
+.nav-container:hover {
+    background-color: #555;
+    color: white;
+}
+
 #DanPort {
     background-color: rgb(42, 44, 42);
     color: white;
     padding: 40px;
 }
+#DanPort:hover {
+    background-color: #555;
+    color: white;
+}
+
 
 
 .my-portrait figcaption {
@@ -11,16 +26,15 @@
     font-size: large;
 }
 
-#about-me p {
-    color: red;
-}
-
-
-#about-me > p {
+#about-me  p {
     color: green;
 }
 
-
-#box {
-    outline: 3px solid green;
+.son-house {
+    color:rgb(247, 69, 4)
 }
+
+
+
+
+
