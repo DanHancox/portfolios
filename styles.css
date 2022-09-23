@@ -1,16 +1,26 @@
 #DanPort {
-    background-color: green;
+    background-color: rgb(42, 44, 42);
     color: white;
     padding: 40px;
 }
 
-.test-class {
-     grid-column: 1 /2;
-     background-color: black;
-    color: white;
-    padding: 20px
+
+.my-portrait figcaption {
+    color: violet;
+    font-style: italic;
+    font-size: large;
 }
 
-h3 {
-    color:blue
+#about-me p {
+    color: red;
+}
+
+
+#about-me > p {
+    color: green;
+}
+
+
+#box {
+    outline: 3px solid green;
 }
