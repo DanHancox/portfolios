@@ -1,3 +1,7 @@
+body {
+    padding: 2rem;
+    outline-color: blue;
+}
 
 .nav-container a {
     color: green;
@@ -26,7 +30,7 @@
 .my-portrait figcaption {
     color: violet;
     font-style: italic;
-    font-size: large;
+    font-size: 59px;
 }
 
 #about-me::first-letter { /*pseudo-element - from an ID*/
@@ -60,5 +64,7 @@
     height: 70px;
     width: 100%;
     position: absolute;
+    padding: 1rem;
     left: 0px;
     z-index: -1;
+ }
