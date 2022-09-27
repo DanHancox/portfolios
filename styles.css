@@ -1,7 +1,19 @@
 body {
     padding: 2rem;
-    outline-color: blue;
 }
+
+body {
+    font-family: sans-serif, Times, serif;
+    letter-spacing: 3px;
+}
+
+body .head2 {
+    font-size: 80px;
+    font-weight: 900;
+    font-style: oblique;
+    text-transform: capitalize;
+}
+
 
 .nav-container a {
     color: green;
@@ -12,34 +24,52 @@ body {
     color: white;
 }
 .nav-container:visited {
-    color:rgb(247, 69, 4)
+    color:rgba(247, 69, 4, 20);
 }
+
 
 #DanPort {
     background-color: rgb(42, 44, 42);
     color: white;
     padding: 40px;
 }
+
 #DanPort:hover { /*pseudo-class - from an ID*/
     background-color: #555;
     color: white;
 }
 
 
-
 .my-portrait figcaption {
-    color: violet;
+    border: 5px solid#488d65;
+    c
+    box-shadow: -5px 5px 30px 5px #488d65;
+    padding: 20px;
+    color: rgb(81, 43, 81);
     font-style: italic;
-    font-size: 59px;
+    font-size: 22px;
 }
+
+
 
 #about-me::first-letter { /*pseudo-element - from an ID*/
     color: green;
 }
 
-.son-house:hover { /*pseudo-class - from a class*/
-    color:rgb(247, 69, 4)
+
+.son-house:hover p { /*pseudo-class - from a class*/
+    color:rgba(247, 69, 4, 0.5)
+    /*the a (rgb) applies opacity, final value 0.5 is the given value for opacity*/ 
 }
+
+
+.son-house p {
+    padding: 20px;
+    box-shadow: 5px -5px 10px 5px #646161;
+    line-height: 1.9rem;
+    letter-spacing: 3px; 
+}
+
 
 #box {
     outline: 3px solid green
@@ -47,24 +77,34 @@ body {
 
 #box:checked + label {
     color: green;
-  }
+}
 
-  a::after { /*adding the arrows onto the link content, twitter etc*/
+a::before{ /*adding the arrows onto the link content, twitter etc*/
     content: "→";
- }
+}
 
- p {
+p {
     position: relative;
- }
+}
  /* the above code is to do with positioning, and allows us to use the z-index property below */  
- 
- p::after {
-    content: "";
-    background-color: palegoldenrod;
-    height: 70px;
-    width: 100%;
-    position: absolute;
-    padding: 1rem;
-    left: 0px;
-    z-index: -1;
- }
+
+
+#socials [href] { 
+    text-decoration: none;
+} /*target socials ID, target href attribute inside ID, applied decoration to href attribute*/
+
+
+.div-element {
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: red;
+}
+.span-element {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: blue;
+}
+
