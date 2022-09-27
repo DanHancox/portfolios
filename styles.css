@@ -1,3 +1,6 @@
+
+
+
 body {
     padding: 2rem;
 }
@@ -14,13 +17,21 @@ body .head2 {
     text-transform: capitalize;
 }
 
+.nav-container {
+    border: 5px solid#7d7d7d;
+    box-shadow: -5px 5px 30px 5px #66736b;
+    padding: 20px;
+    color: rgb(81, 43, 81);
+    font-style: italic;
+    font-size: 22px;
+}
 
 .nav-container a {
     color: green;
     font-size: xx-large;
 }
 .nav-container:hover {
-    background-color: #555;
+    background-color: rgb(141, 138, 138);
     color: white;
 }
 .nav-container:visited {
@@ -28,22 +39,17 @@ body .head2 {
 }
 
 
-#DanPort {
-    background-color: rgb(42, 44, 42);
-    color: white;
-    padding: 40px;
+#DanPort h1, h2 {
+    background-color: rgb(83, 83, 83);
+   
 }
 
-#DanPort:hover { /*pseudo-class - from an ID*/
-    background-color: #555;
-    color: white;
-}
+
 
 
 .my-portrait figcaption {
-    border: 5px solid#488d65;
-    c
-    box-shadow: -5px 5px 30px 5px #488d65;
+    border: 5px solid#7d7d7d;
+    box-shadow: -5px 5px 30px 5px #66736b;
     padding: 20px;
     color: rgb(81, 43, 81);
     font-style: italic;
@@ -56,6 +62,14 @@ body .head2 {
     color: green;
 }
 
+.about-text {
+    border: 2px solid black;
+    box-shadow: -2px 2px 20px 2px;
+    padding: 1rem
+}
+
+
+
 
 .son-house:hover p { /*pseudo-class - from a class*/
     color:rgba(247, 69, 4, 0.5)
@@ -65,6 +79,7 @@ body .head2 {
 
 .son-house p {
     padding: 20px;
+    border: 2px solid black;
     box-shadow: 5px -5px 10px 5px #646161;
     line-height: 1.9rem;
     letter-spacing: 3px; 
