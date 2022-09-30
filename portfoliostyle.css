@@ -2,30 +2,102 @@ p {
     font-family: 'Courier New', Courier, monospace;
 }
 
+body {
+  background-color: rgb(220, 233, 233);
+}
 
 .header {
-    padding: 5px;
-    text-align: center;
-    background: #434545;
-    box-shadow: -5px 5px 30px 5px #66736b;
-    color: white;
-    font-size: 30px;
+    
     font-family: 'Courier New', Courier, monospace;
   }
 
+/*#nav {
+ display: flex;
+ border: solid goldenrod;
+ align-items: center;
+ justify-content: space-between;
+ padding: 10px;
+ background-color: rgb(159, 223, 223);
+ color: #fff;
+}*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: teal;
+  color: #fff;
+ }
+ .nav-links a {
+  color: #fff;
+ }
+ /* LOGO */
+ .logo {
+  font-size: 32px;
+ }
+ /* NAVBAR MENU */
+ .menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+ }
+ .menu li:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+ }
+ .menu li {
+  padding: 5px 14px;
+ }
+ /* DROPDOWN MENU */
+ .services {
+  position: relative; 
+ }
+ .dropdown {
+  background-color: rgb(1, 139, 139);
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+ }
+ .dropdown li + li {
+  margin-top: 10px;
+ }
+ .dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+ }
+ .dropdown li:hover {
+  background-color: #4c9e9e;
+ }
+ .services:hover .dropdown {
+  display: block;
+ }
+ .nav-links a {
+  color: #fff;
+ }
+ /* LOGO */
+ .logo {
+  font-size: 32px;
+ }
+ /* NAVBAR MENU */
+ .menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+ }
 
 
-#nav {
-  position: fixed;
-  top: 10px;
-  padding: 10px;
-  border: 2px solid black;
-  background: #464949;
-  box-shadow: -2px 2px 15px 2px #3d3e3e;
-}
+
 
 
 #footer {
+  display: flex;
+  border: solid goldenrod;
+
   padding: 10px;
   text-align: center;
   background: #434545;
