@@ -1,103 +1,85 @@
+@font-face {
+  font-family: elitefont;
+  src :url("./fonts/Special_Elite/SpecialElite-Regular.ttf");
+}
+
+@media (max-width: 769px) {
+.nav-links {
+  float: none;
+  width: 100%;
+}
+
+}
+
 p {
-    font-family: 'Courier New', Courier, monospace;
+  
+  font-family: 'Courier New', Courier, monospace;
 }
 
 body {
-  background-color: rgb(220, 233, 233);
+  background-color: rgb(91, 120, 100);
 }
 
-.header {
-    
-    font-family: 'Courier New', Courier, monospace;
-  }
 
-/*#nav {
- display: flex;
- border: solid goldenrod;
- align-items: center;
- justify-content: space-between;
- padding: 10px;
- background-color: rgb(159, 223, 223);
- color: #fff;
-}*/
 
-.navbar {
+
+
+
+.navbar { /*container*/
   display: flex;
-  align-items: center;
+  border: 1px solid black;
   justify-content: space-between;
-  padding: 20px;
-  background-color: teal;
+  padding: 5px;
+  background-color: rgb(91, 113, 91);
   color: #fff;
- }
- .nav-links a {
+}
+
+
+.nav-links a {
+  font-family: elitefont;
   color: #fff;
- }
- /* LOGO */
- .logo {
-  font-size: 32px;
- }
- /* NAVBAR MENU */
- .menu {
+  margin: auto;
+  padding-right: 20px;
+}
+
+.logo h1 {
+  margin: auto;
+  font-size: 40px;
+  font-family: elitefont;
+  padding: 10px;
+}
+
+.logo p {
+  margin: auto;
+  padding: 10px;
+  font-family: elitefont;
+}
+
+.nav-links a {
+  color: rgb(56, 43, 43);
+}
+
+
+#aboutme { /*container flex*/
   display: flex;
-  gap: 1em;
-  font-size: 18px;
- }
- .menu li:hover {
-  background-color: #4c9e9e;
-  border-radius: 5px;
-  transition: 0.3s ease;
- }
- .menu li {
-  padding: 5px 14px;
- }
- /* DROPDOWN MENU */
- .services {
-  position: relative; 
- }
- .dropdown {
-  background-color: rgb(1, 139, 139);
-  padding: 1em 0;
-  position: absolute; /*WITH RESPECT TO PARENT*/
-  display: none;
-  border-radius: 8px;
-  top: 35px;
- }
- .dropdown li + li {
-  margin-top: 10px;
- }
- .dropdown li {
-  padding: 0.5em 1em;
-  width: 8em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutme { /*container items eg aboutme aboutme2 applies to all items with about me*/
+  
+  margin: 10px;
+  border: 3px solid black;
+  background-color: azure;
   text-align: center;
- }
- .dropdown li:hover {
-  background-color: #4c9e9e;
- }
- .services:hover .dropdown {
-  display: block;
- }
- .nav-links a {
-  color: #fff;
- }
- /* LOGO */
- .logo {
-  font-size: 32px;
- }
- /* NAVBAR MENU */
- .menu {
-  display: flex;
-  gap: 1em;
-  font-size: 18px;
- }
-
-
+}
 
 
 
 #footer {
   display: flex;
   border: solid goldenrod;
-
   padding: 10px;
   text-align: center;
   background: #434545;
@@ -107,7 +89,3 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
-.aboutme {
-  text-align: center;
-
-}
